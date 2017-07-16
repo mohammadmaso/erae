@@ -30,8 +30,11 @@ define({
 	mapToDefaults: function() {
 		var _this = this;
 
+		if(this.loadedSettings == null)
+			this.loadedSettings = {};
+
 		_.each(this.data, function(item, key) {
-			var loadedSettingValue = _this.loadedSettings[key];
+			var loadedSettingValue = _this.get(key);
 
 			if(loadedSettingValue == null)
 			{
@@ -39,6 +42,10 @@ define({
 				_this.seed(_this.loadedSettings);
 			}
 		});
+	},
+
+	get: function(key) {
+		return typeof this.loadedSettings[key] == "undefined" ? null : this.loadedSettings[key];
 	},
 
 	seed: function(data) {

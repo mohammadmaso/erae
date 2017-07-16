@@ -26,7 +26,7 @@ define(["libs/backbone"],
 			},
 
 			loadSettings: function() {
-				var _loadedSettings = null;
+				var _loadedSettings = {};
 				this.storage.load(this.key, function(res) {
 					_loadedSettings = res;
 				});
