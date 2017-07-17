@@ -10,6 +10,9 @@ define(["libs/backbone"],
 
 				this.on('imgur:enable', this.enableImgur, this);
 				this.on('imgur:disable', this.disableImgur, this);
+
+				this.on('useHint:enable', this.enableHint, this);
+				this.on('useHint:disable', this.disableHint, this);
 			},
 
 			enableImgur: function() {
@@ -18,6 +21,14 @@ define(["libs/backbone"],
 
 			disableImgur: function() {
 				this.store('useImgUr', false);
+			},
+
+			enableHint: function() {
+				this.store('useHint', true);
+			},
+
+			disableHint: function() {
+				this.store('useHint', false);
 			},
 
 			load: function(key)

@@ -1,7 +1,8 @@
 define({
 	'key': 'strut.settings',
 	'data': {
-		'useImgUr': false
+		'useImgUr': false,
+		'useHint': false
 	},
 	loadedSettings : null,
 

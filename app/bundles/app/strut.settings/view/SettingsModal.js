@@ -5,7 +5,8 @@ function(Backbone) {
 		className: 'modal fade settings-modal',
 		events: {
 			'click #saveSettings': '_save',
-			'change #useImgur':'_toggleImgur'
+			'change #useImgur':'_toggleImgur',
+			'change #useHint':'_toggleHint'
 		},
 
 		initialize: function() {
@@ -23,8 +24,11 @@ function(Backbone) {
 				this.model.trigger('imgur:disable');
 			}
 		},
+		_toggleHint: function(event) {
+			this.model.trigger('useHint:' + ($("#useHint").is(':checked') ? 'enable' : 'disable'));
+		},
 		render: function() {
-			this.$el.html(this._template({useImgUr: this.model.loadedSettings.useImgUr}));
+			this.$el.html(this._template({useImgUr: this.model.loadedSettings.useImgUr, useHint: this.model.loadedSettings.useHint}));
 			return this;
 		}
 	});
