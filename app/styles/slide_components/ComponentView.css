@@ -114,6 +114,7 @@
 .component input {
 	width: 25px;
 	height: 22px;
+	font-size: 12px;
 	line-height: 12px;
 }
 
