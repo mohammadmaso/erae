@@ -40,7 +40,6 @@ function(Backbone, Imgup, pasteJs) {
 				  }.bind(this), 1)
 				}.bind(this));
 			}.bind(this))
-			console.log(this,'this')
 		},
 		show: function(cb) {
 			this.cb = cb;
