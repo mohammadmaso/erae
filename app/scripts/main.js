@@ -6,7 +6,8 @@ require.config({
     	jquery: "../scripts/libs/jQuery",
 		jqueryui: "../scripts/libs/jquery-ui",
 		touchpunch: "../scripts/libs/jquery-ui-touch-punch",
-		"jquery.multisortable": "../scripts/libs/jquery.multisortable",
+        "jquery.multisortable": "../scripts/libs/jquery.multisortable",
+		paste: "../scripts/libs/paste",
     	position: "../components/jq-contextmenu/jquery.ui.position",
     	jqContextMenu: "../components/jq-contextmenu/jquery.contextMenu",
     	lodash: "../scripts/libs/lodash",
@@ -64,7 +65,9 @@ require.config({
 		bootstrap: {
 			deps: ["jquery"]
 		},
-
+        paste: {
+            deps: ["jquery"]
+        },
 		"jquery.multisortable": {
 			deps: ["jquery", "jqueryui"]
 		},

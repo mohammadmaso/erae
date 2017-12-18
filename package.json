@@ -21,7 +21,8 @@
     "grunt-open": "~0.2.0",
     "grunt-text-replace": "~0.3.2",
     "grunt-usemin": "~0.1.9",
-    "matchdep": "~0.1.2"
+    "matchdep": "~0.1.2",
+    "paste.js": "0.0.21"
   },
   "engines": {
     "node": ">=0.8.0"
