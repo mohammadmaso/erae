@@ -205,3 +205,13 @@
 	visibility: visible;
 }
 
+.z-controls {
+	position: fixed;
+	top: 10px;
+}
+.increase-z {
+	left: 40px;
+}
+.decrease-z {
+	left: 10px;
+}

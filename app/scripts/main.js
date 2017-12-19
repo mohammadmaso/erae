@@ -195,6 +195,20 @@ log.notice = function(msg) {
 		console.log(msg);
 }
 
+Object.defineProperty(Array.prototype, '_moveByIndex', {
+    enumerable: false,
+    value: function( old_index, new_index) {
+        if (new_index >= this.length) {
+            var k = new_index - this.length;
+            while ((k--) + 1) {
+                this.push(undefined);
+            }
+        }
+        this.splice(new_index, 0, this.splice(old_index, 1)[0]);
+        return this; // for testing purposes
+    }
+});
+
 // reassigning rquire to r for
 // the "preview" includes so they don't get built into the actual
 // amd app.
