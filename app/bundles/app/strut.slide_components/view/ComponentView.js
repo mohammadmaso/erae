@@ -642,6 +642,7 @@ define(["libs/backbone",
 				if(newIndex < slideComponents.length) {
 					slideComponents._moveByIndex(oldIndex, newIndex);
 				}
+				this._unrender()
 				key.trigger('renderContents') // key = GlobalEvents !
 				this.$el.trigger("focused")
 			},
@@ -652,6 +653,7 @@ define(["libs/backbone",
 				if(newIndex >= 0) {
 					slideComponents._moveByIndex(oldIndex, newIndex);
 				}
+				this._unrender()
 				key.trigger('renderContents') // key = GlobalEvents !
 				this.$el.trigger("focused")
 			},
