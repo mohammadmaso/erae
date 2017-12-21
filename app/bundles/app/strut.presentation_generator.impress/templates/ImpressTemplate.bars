@@ -54,5 +54,16 @@
     <p>Use a spacebar or arrow keys to navigate</p>
 </div>
 {{/if}}
+{{#if attributes.settings.hideSlideWhileNavigating}}
+<style>
+.impress-enabled .step {
+    opacity: 0;
+}
+
+.impress-on-overview .step, .impress-enabled .step.active {
+    opacity: 1;
+}
+</style>
+{{/if}}
 </div>
 </div>

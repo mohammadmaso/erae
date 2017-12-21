@@ -13,6 +13,9 @@ define(["libs/backbone"],
 
 				this.on('useHint:enable', this.enableHint, this);
 				this.on('useHint:disable', this.disableHint, this);
+
+				this.on('hideSlideWhileNavigating:enable', this.enableHideSlideWhileNavigating, this);
+				this.on('hideSlideWhileNavigating:disable', this.disableHideSlideWhileNavigating, this);
 			},
 
 			enableImgur: function() {
@@ -22,7 +25,12 @@ define(["libs/backbone"],
 			disableImgur: function() {
 				this.store('useImgUr', false);
 			},
-
+			enableHideSlideWhileNavigating: function () {
+				this.store('hideSlideWhileNavigating', true);
+			},
+			disableHideSlideWhileNavigating: function () {
+				this.store('hideSlideWhileNavigating', false);
+			},
 			enableHint: function() {
 				this.store('useHint', true);
 			},

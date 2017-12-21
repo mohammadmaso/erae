@@ -7,6 +7,7 @@ define({
 	slides: 'Slides',
 	overview: 'Overview',
 	settings: 'Settings',
+	hideSlideWhileNavigating: 'Hide other slides while navigating',
 	useImgUr: 'Upload Images to Imgur.com',
 	close: 'Close',
 	open: 'Open',

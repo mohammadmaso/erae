@@ -2,7 +2,8 @@ define({
 	'key': 'strut.settings',
 	'data': {
 		'useImgUr': false,
-		'useHint': false
+		'useHint': false,
+		'hideSlideWhileNavigating': false
 	},
 	loadedSettings : null,
 
