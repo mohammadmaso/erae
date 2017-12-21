@@ -1,5 +1,5 @@
  .substep { opacity: 0; }
-        .substep.substep-visible { opacity: 1; transition: opacity 1s; }
+        .substep.substep-visible { opacity: 1; transition: all 1s; }
 
 
 .substep {
@@ -37,7 +37,7 @@
   100% { opacity: 1; transform: translateX(0px) rotate(0deg); }
 }
 
-.substep.present.rollIn {
+.substep-visible.rollIn {
   -webkit-animation-name: rollIn;
   -moz-animation-name: rollIn;
   -o-animation-name: rollIn;
@@ -175,7 +175,7 @@
     }
 }
 
-.substep.present.flipInX {
+.substep-visible.flipInX {
   -webkit-backface-visibility: visible !important;
   -webkit-animation-name: flipInX;
   -moz-backface-visibility: visible !important;
@@ -318,7 +318,7 @@
     }
 }
 
-.substep.present.flipInY {
+.substep-visible.flipInY {
   -webkit-backface-visibility: visible !important;
   -webkit-animation-name: flipInY;
   -moz-backface-visibility: visible !important;
@@ -454,7 +454,7 @@
   100% {opacity: 1;}
 }
 
-.substep.present.fadeIn {
+.substep-visible.fadeIn {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
   -o-animation-name: fadeIn;
@@ -537,7 +537,7 @@
   }
 }
 
-.substep.present.fadeInLeft {
+.substep-visible.fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   -moz-animation-name: fadeInLeft;
   -o-animation-name: fadeInLeft;
@@ -647,7 +647,7 @@
   }
 }
 
-.substep.present.fadeInRight {
+.substep-visible.fadeInRight {
   -webkit-animation-name: fadeInRight;
   -moz-animation-name: fadeInRight;
   -o-animation-name: fadeInRight;
@@ -757,7 +757,7 @@
   }
 }
 
-.substep.present.fadeInUpBig {
+.substep-visible.fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
   -moz-animation-name: fadeInUpBig;
   -o-animation-name: fadeInUpBig;
@@ -808,7 +808,7 @@
   }
 }
 
-.substep.present.fadeInLeftBig {
+.substep-visible.fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;
   -moz-animation-name: fadeInLeftBig;
   -o-animation-name: fadeInLeftBig;
@@ -864,7 +864,7 @@
 
 
 
-.substep.present.fadeInRightBig {
+.substep-visible.fadeInRightBig {
   -webkit-animation-name: fadeInRightBig;
   -moz-animation-name: fadeInRightBig;
   -o-animation-name: fadeInRightBig;
@@ -951,7 +951,7 @@
   }
 }
 
-.substep.present.bounceIn {
+.substep-visible.bounceIn {
   -webkit-animation-name: bounceIn;
   -moz-animation-name: bounceIn;
   -o-animation-name: bounceIn;
@@ -1124,7 +1124,7 @@
   }
 }
 
-.substep.present.bounceInUp {
+.substep-visible.bounceInUp {
   -webkit-animation-name: bounceInUp;
   -moz-animation-name: bounceInUp;
   -o-animation-name: bounceInUp;
@@ -1282,7 +1282,7 @@
   }
 }
 
-.substep.present.bounceInDown {
+.substep-visible.bounceInDown {
   -webkit-animation-name: bounceInDown;
   -moz-animation-name: bounceInDown;
   -o-animation-name: bounceInDown;
@@ -1440,7 +1440,7 @@
   }
 }
 
-.substep.present.bounceInLeft {
+.substep-visible.bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   -moz-animation-name: bounceInLeft;
   -o-animation-name: bounceInLeft;
@@ -1598,7 +1598,7 @@
   }
 }
 
-.substep.present.bounceInRight {
+.substep-visible.bounceInRight {
   -webkit-animation-name: bounceInRight;
   -moz-animation-name: bounceInRight;
   -o-animation-name: bounceInRight;
@@ -1704,7 +1704,7 @@
   100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
 }
 
-.substep.present.lightSpeedIn {
+.substep-visible.lightSpeedIn {
     -webkit-animation-name: lightSpeedIn;
     -moz-animation-name: lightSpeedIn;
     -o-animation-name: lightSpeedIn;
