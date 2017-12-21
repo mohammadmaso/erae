@@ -223,3 +223,14 @@
     display: inline-block;
     font-size: 20px;
 }
+
+.ui-selected .substep:after {
+	content: "\e104";
+	font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    bottom: 0px;
+    color: black;
+}
