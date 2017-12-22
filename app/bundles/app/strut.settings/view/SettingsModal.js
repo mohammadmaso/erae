@@ -7,6 +7,7 @@ function(Backbone) {
 			'click #saveSettings': '_save',
 			'change #useImgur':'_toggleImgur',
 			'change #hideSlideWhileNavigating':'_toggleHideSlideWhileNavigating',
+			'change #keepShownSubsteps':'_toggleKeepShownSubsteps',
 			'change #useHint':'_toggleHint'
 		},
 
@@ -24,6 +25,13 @@ function(Backbone) {
 				this.model.trigger('hideSlideWhileNavigating:disable');
 			}
 		},
+		_toggleKeepShownSubsteps: function(event) {
+			if($("#keepShownSubsteps").is(':checked')) {
+				this.model.trigger('keepShownSubsteps:enable');
+			} else {
+				this.model.trigger('keepShownSubsteps:disable');
+			}
+		},
 		_toggleImgur: function(event) {
 			if($("#useImgur").is(':checked')) {
 				this.model.trigger('imgur:enable');
@@ -35,7 +43,7 @@ function(Backbone) {
 			this.model.trigger('useHint:' + ($("#useHint").is(':checked') ? 'enable' : 'disable'));
 		},
 		render: function() {
-			this.$el.html(this._template({useImgUr: this.model.loadedSettings.useImgUr, useHint: this.model.loadedSettings.useHint, hideSlideWhileNavigating: this.model.loadedSettings.hideSlideWhileNavigating}));
+			this.$el.html(this._template({useImgUr: this.model.loadedSettings.useImgUr, useHint: this.model.loadedSettings.useHint, hideSlideWhileNavigating: this.model.loadedSettings.hideSlideWhileNavigating, keepShownSubsteps: this.model.loadedSettings.keepShownSubsteps}));
 			return this;
 		}
 	});

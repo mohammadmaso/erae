@@ -3,6 +3,7 @@ define({
 	'data': {
 		'useImgUr': false,
 		'useHint': false,
+		'keepShownSubsteps': false,
 		'hideSlideWhileNavigating': false
 	},
 	loadedSettings : null,

@@ -65,5 +65,10 @@
 }
 </style>
 {{/if}}
+{{#if attributes.settings.keepShownSubsteps}}
+<style id="keepShownSubsteps">
+.substep.substep-shown { opacity: 1; }
+</style>
+{{/if}}
 </div>
 </div>

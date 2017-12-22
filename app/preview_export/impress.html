@@ -56,6 +56,23 @@
 <script src="scripts/onready.js"></script>
 <script src="scripts/loadPresentation.js"></script>
 <script>
+var keepShownSubsteps = function() {
+    var addShownToPrevSubsteps = function() {
+        var prevSlide = document.querySelector(".prev")
+        if(prevSlide == null)
+            return ;
+
+        prevSlide.querySelectorAll('.substep').forEach(substep => {
+            substep.classList.add('substep-shown');
+        });
+    }
+
+    document.addEventListener( "impress:stepenter", function(e) {
+        addShownToPrevSubsteps();
+    });
+}
+</script>
+<script>
 ready(function() {
     if (document.getElementById('launched-placeholder'))
         loadPresentation();
@@ -63,6 +80,8 @@ ready(function() {
     if (!window.presStarted) {
         startPres(document, window);
         impress().init();   
+        if(document.getElementById('keepShownSubsteps'))
+            keepShownSubsteps()
     }
 
     if ("ontouchstart" in document.documentElement) { 

@@ -8,6 +8,7 @@ define({
 	overview: 'Overview',
 	settings: 'Settings',
 	hideSlideWhileNavigating: 'Hide other slides while navigating',
+	keepShownSubsteps: 'Hide substeps only before the first time they enter the slide, then keep it shown',
 	useImgUr: 'Upload Images to Imgur.com',
 	close: 'Close',
 	open: 'Open',
