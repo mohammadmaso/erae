@@ -74,6 +74,11 @@ var keepShownSubsteps = function() {
 </script>
 <script>
 ready(function() {
+    document.addEventListener("keyup", function(e) {
+        if(e.keyCode == 27)
+            impress().goto( document.getElementById( "overview" ) );
+    });
+
     if (document.getElementById('launched-placeholder'))
         loadPresentation();
 
