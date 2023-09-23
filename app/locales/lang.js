@@ -5,8 +5,9 @@ define(['../locales/de',
 		'../locales/nl',
 		'../locales/ru',
 		'../locales/ar',
+		'../locales/fa',
 		'handlebars'],
-function(de, en, es, fr, nl, ru, ar, handlebars) {
+function(de, en, es, fr, nl, ru, ar,fa, handlebars) {
 	var langs = {
 		en: en,
 		de: de,
@@ -14,7 +15,8 @@ function(de, en, es, fr, nl, ru, ar, handlebars) {
 		fr: fr,
 		nl: nl,
 		ru: ru,
-		ar: ar
+		ar: ar,
+		fa: fa,
 	};
 
 	var lang = window.navigator.language || window.navigator.userLanguage;

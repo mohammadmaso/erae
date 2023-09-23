@@ -1,4 +1,25 @@
 @font-face {
+  font-family: "Alibaba";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./alibaba-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Alibaba";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./alibaba-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Alibaba";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./alibaba-black.woff2") format("woff2");
+}
+
+@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
